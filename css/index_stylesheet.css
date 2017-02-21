@@ -1,0 +1,306 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/* CSS Document */
+/*rest*/
+html,body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:12px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none; border:none; background-color:none;}
+textarea{resize:none;}
+a{text-decoration:none; color:#656565;}
+
+/* clear float*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+
+/*float*/
+.fl{float:left;}
+.fr{float:right;}
+
+/* global use */
+body { 
+	font-family: 'Open Sans', sans-serif;
+	color: #666;
+}
+#map {
+	height: 100%;
+}
+
+.weatherIcons1{
+	font-size:40px;
+}
+
+.weatherIcons{
+	font-size:20px;
+}
+
+/* Loading page */
+.back-link a {
+		color: #4ca340;
+		text-decoration: none; 
+		border-bottom: 1px #4ca340 solid;
+	}
+	.back-link a:hover,
+	.back-link a:focus {
+		color: #408536; 
+		text-decoration: none;
+		border-bottom: 1px #408536 solid;
+	}
+	h1 {
+		height: 100%;
+		/* The html and body elements cannot have any padding or margin. */
+		margin: 0;
+		font-size: 14px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 32px;
+		margin-bottom: 3px;
+	}
+	.entry-header {
+		text-align: left;
+		margin: 0 auto 50px auto;
+		width: 80%;
+        max-width: 978px;
+		position: relative;
+		z-index: 10001;
+	}
+	#demo-content {
+		padding-top: 100px;
+	}
+	
+/* Nav bar*/
+.navbar{
+	position:absolute;
+	top:0px;
+	height:60px;
+	width:100%;
+}
+.iconImg{
+    width: 60px;
+    margin-top: -8%;
+}
+.navbar-brand{
+	height:60px;
+}
+
+
+
+
+/* Page Content*/
+.background-wrap {
+	position: fixed;
+	z-index: -1000;
+	top:0;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	left: 0;
+}
+			
+#video-bg-elem {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.container-fluid{
+	background-color:#595959;
+}
+
+.content {
+	position: absolute;
+	top:60px;
+	width: 100%;
+	min-height: 100%;
+	z-index: 10;
+	background-color: rgba(255,204,204,0.7);
+}
+
+.row{
+	margin-top:2%;
+}
+
+
+
+#middleM{
+	text-align: center;
+}
+
+
+
+
+
+/* Content-weekly */
+.content-weekly{
+	position:absolute;
+	width:80%;
+	clear:both;
+	z-index:100;
+	margin:5% 10%;
+	top:300px;
+}
+
+
+
+.panel-transparent {
+        background: none;
+    }
+
+    .panel-transparent .panel-heading{
+        background: rgba(46, 51, 56, 0.2)!important;
+    }
+
+    .panel-transparent .panel-body{
+        background: rgba(122, 130, 136, 0.2)!important;
+    }
+  .icons{
+  	width:30%;
+  	float:left;
+  	margin-left:5%;
+  }
+  .contents{
+  	width:60%;
+  	float:left;
+  	margin-right:5%;
+  }
+
+.detail1{
+	margin:3%;
+	width:22%;
+	display:inline-block;
+}
+/* Footer */
+.footer{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:70px;
+	z-index:100;
+	background-color:#595959;
+	color:#fff;
+}
+
+.btn-icon{
+	margin:12px 4%;
+}
+
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px){
+	.row{
+		margin-top:40%;
+	}
+	.dailyInfo{
+	display:none
+}
+.iconLg{
+	width:200px; 
+}
+#middleL{
+    padding-left: 25%;
+}
+#middleR{
+	padding-left:15%;
+}
+.detail{
+	margin:3%;
+	width:40%;
+	display:inline-block;
+}
+.background-wrap{
+	overflow: hidden;
+}
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+	.row{
+		margin-top:20%;
+	}
+	.dailyInfo{
+	display:none
+}
+.iconLg{
+	width:300px; 
+}
+#middleL{
+	padding-left: 0;
+	display:none;
+
+}
+#middleR{
+	padding-left:2%;
+	display:inline-block;
+
+}
+.detail{
+	    margin-left: 70%;
+    width: 50%;
+    display: inline-block;
+}
+#middleM{
+	width:40%;
+	display:inline-block;
+
+}
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px)  {
+	.row{
+		margin-top:5%;
+	}
+	.dailyInfo{
+	display:inline-block;
+}
+.iconLg{
+	width:300px; 
+}
+#middleL{
+	padding-left: 5%;
+    padding-top: 5%;
+    display:inline-block;
+}
+#middleR{
+	padding-top:5%;
+}
+.detail{
+	    margin: 2%;
+    width: 30%;
+    display: inline-block;
+}
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+	.row{
+		margin-top:2%;
+	}
+	.dailyInfo{
+	display:inline-block;
+}
+.iconLg{
+	width:400px; 
+}
+#middleL{
+	padding-left: 15%;
+    padding-top: 2%;
+}
+#middleR{
+	padding-top:2%;
+}
+.detail{
+	margin:3%;
+	width:30%;
+	display:inline-block;
+}
+#middleM {
+    width: 30%;
+    display: inline-block;
+}
+
+}   
